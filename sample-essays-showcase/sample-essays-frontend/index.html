@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Essays Showcase</title>
+  <link rel="stylesheet" href="src/input.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white shadow-sm">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center text-white font-bold">
+          ✨
+        </div>
+        <span class="text-xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+          Essays Showcase
+        </span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="text-gray-600 hover:text-indigo-600 font-medium transition">Home</a>
+        <a href="browse.html" class="text-gray-600 hover:text-indigo-600 font-medium transition">Browse</a>
+        <a href="#" class="btn btn-primary text-sm">Search</a>
+      </nav>
+      <button class="md:hidden text-gray-600 text-2xl">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden bg-gradient-to-br from-indigo-50 via-white to-purple-50 py-20 md:py-32">
+    <div class="absolute inset-0 overflow-hidden">
+      <div class="absolute -top-40 -right-40 w-80 h-80 bg-indigo-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+      <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+    </div>
+    
+    <div class="relative max-w-6xl mx-auto px-6 text-center">
+      <h1 class="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+        Explore Exceptional Essays
+      </h1>
+      <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+        Discover carefully curated sample essays across diverse topics. Learn from excellence and find inspiration for your own writing.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="browse.html" class="btn btn-primary">Browse All Essays</a>
+        <a href="browse.html" class="btn btn-outline">Explore by Category</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Essays -->
+  <section class="max-w-6xl mx-auto px-6 py-16">
+    <div class="mb-12">
+      <h2 class="text-4xl font-bold mb-2">Featured Essays</h2>
+      <p class="text-gray-600">Hand-picked examples of excellent writing</p>
+    </div>
+    
+    <div id="featured-container" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Featured cards will be inserted here -->
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid grid-cols-3 gap-8 text-center">
+        <div>
+          <div class="text-4xl font-bold mb-2" id="essay-count">0</div>
+          <p class="text-indigo-100">Essays</p>
+        </div>
+        <div>
+          <div class="text-4xl font-bold mb-2" id="category-count">0</div>
+          <p class="text-indigo-100">Categories</p>
+        </div>
+        <div>
+          <div class="text-4xl font-bold mb-2">2024</div>
+          <p class="text-indigo-100">Year</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Preview -->
+  <section class="max-w-6xl mx-auto px-6 py-16">
+    <div class="mb-12">
+      <h2 class="text-4xl font-bold mb-2">Browse by Category</h2>
+      <p class="text-gray-600">Find essays that interest you</p>
+    </div>
+    
+    <div id="categories-container" class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <!-- Categories will be inserted here -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <h3 class="font-bold text-white mb-4">About</h3>
+          <p class="text-sm">Sample Essays Showcase is a platform for discovering exceptional writing across diverse topics.</p>
+        </div>
+        <div>
+          <h3 class="font-bold text-white mb-4">Categories</h3>
+          <ul class="text-sm space-y-2" id="footer-categories">
+            <!-- Categories will be inserted here -->
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-white mb-4">Connect</h3>
+          <ul class="text-sm space-y-2">
+            <li><a href="#" class="hover:text-white transition">Twitter</a></li>
+            <li><a href="#" class="hover:text-white transition">LinkedIn</a></li>
+            <li><a href="#" class="hover:text-white transition">Email</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8 text-center text-sm">
+        <p>&copy; 2024 Sample Essays Showcase. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
